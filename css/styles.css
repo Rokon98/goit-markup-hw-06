@@ -132,6 +132,9 @@ font-family: 'Raleway', sans-serif;
 
          transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.pozi{
+    color: #2196F3;
+}
 
 .logo-list-item:hover{
     color: #2196F3;
@@ -531,9 +534,9 @@ overflow: hidden;
      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
      transform: translateY(100%);
 }
-.option-prod:hover::before,
-.option-prod-tixt:hover{
-  transform: translateY(0%);
+.option-link:hover .option-prod::before,
+.option-link:hover .option-prod-tixt{
+    transform: translateY(0%);
     opacity: 1;
 }
 
@@ -547,10 +550,9 @@ width: 370px;
     text-decoration: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.option-link:hover .option-prod-tixt,
+.option-link:hover,
 .option-link:focus
 {
-    transform: translateY(0%);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
 }
