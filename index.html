@@ -326,23 +326,25 @@
             </button>
             <div>
                 <h2 class="modal-icon">Залиште свої дані, ми вам передзвонимо</h2>
-                   <ul class="modal-list list">
-                       <li>
-                         <label for="name">Імя</label>
-                         <input type="text" name="name" id="name"/> 
-                       </li>
-                       <li>
-                          <label for="tel">Телефон</label>
-                          <input type="tel" name="tel" id="tel"/>
-                        </li>
-                        <li>
-                          <label for="mail">Пошта</label>
-                          <input type="email" name="mail" id="mail"/>
-                        </li>
-                   </ul>
-
+                    <form>
+                        Імя
+                        <input type="text" name="name">
+                    </form>
+                    <form>
+                        Телефон
+                        <input type="tel" name="tel">
+                    </form>
+                    <form>
+                        Пошта
+                        <input type="email" name="email">
+                    </form>
+                    <form>
+                        Коментар
+                        <textarea name="feedback"  rows="5">
+                        placeholder="Type your message here...">
+                        </textarea>
+                    </form>
                     <button  type="submit" class="btn-send">Відправити</button>
-                </form>
             </div>
         </div>
         
