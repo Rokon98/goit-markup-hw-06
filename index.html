@@ -315,6 +315,19 @@
                     </li>
                 </ul>
             </div>
+            <div class="mailing-list">
+                <h2 class="mailing-list-titel">Підпишіться на розсилку</h2>
+                <form>
+                    <input type="email" placeholder="E-mail">
+                    <button type="submit" class="btn-mailing-list">
+                        Підписатися
+                        <svg class="mailing-list-icon" width="24px" height="24px">
+                            <use href="./img/symbol-defs.svg#icon-icon-send-1"></use>
+                        </svg>
+                    </button>
+                </form>
+                
+            </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -324,28 +337,28 @@
             <use href="./img/symbol-defs.svg#icon-close"></use>
             </svg>
             </button>
-            <div>
-                <h2 class="modal-icon">Залиште свої дані, ми вам передзвонимо</h2>
-                    <form>
-                        Імя
-                        <input type="text" name="name">
-                    </form>
-                    <form>
-                        Телефон
-                        <input type="tel" name="tel">
-                    </form>
-                    <form>
-                        Пошта
-                        <input type="email" name="email">
-                    </form>
-                    <form>
-                        Коментар
-                        <textarea name="feedback"  rows="5"
-                        placeholder="Введіть текст">
-                        
-                        </textarea>
-                    </form>
-                    <button  type="submit" class="btn-send">Відправити</button>
+             <strong>Залиште свої дані, ми вам передзвонимо</strong>
+             <form>
+                <div>
+                <label>
+                    <span>Імя</span>
+                    <input type="text" name="name">
+                </label>
+                <label>
+                    <span>Телефон</span>
+                    <input type="tel" name="tel">
+                </label>
+                <label>
+                    <span>Пошта</span>
+                    <input type="email" name="email">
+                </label>
+                </div>
+                <span>Коментар</span>
+                <textarea name="coments"  rows="10"></textarea>
+
+             </form>
+              
+             <button  type="submit" class="btn-send">Відправити</button>
             </div>
         </div>
         
