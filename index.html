@@ -338,35 +338,44 @@
             </svg>
             </button>
              <h2 class="modal-text">Залиште свої дані, ми вам передзвонимо</h2>
-              <form>
-                <div>
+              <form class="modal-form">
+                <div class="modal-name">
                 <label for="name">Імя</label>
-                <input type="text" name="name" id="name">
-                <svg width="18px" height="18px">
+                </div>
+                <div class="modal-vod">
+                <input  type="text" class="modal-input" name="name" id="name">
+                <svg class="modal-icon" width="18px" height="18px">
                     <use href="./img/symbol-defs.svg#icon-person-black"></use>
                 </svg>
                 </div>
-                <div>
+                    <div class="modal-name">
                     <label for="tel">Телефон</label>
-                    <input type="tel" name="tel" id="tel">
-                    <svg width="18px" height="18px">
+                    </div>
+                    <div class="modal-vod">
+                    <input type="tel" class="modal-input" name="tel" id="tel">
+                    <svg class="modal-icon" width="18px" height="18px">
                         <use href="./img/symbol-defs.svg#icon-phone-black"></use>
                     </svg>
                 </div>
-                <div>
+                    <div class="modal-name">
                     <label for="email">Пошта</label>
-                    <input type="email" name="email" id="email">
-                    <svg width="18px" height="18px">
+                    </div>
+                    <div class="modal-vod">
+                    <input type="email" class="modal-input" name="email" id="email">
+                    <svg class="modal-icon" width="18px" height="18px">
                         <use href="./img/symbol-defs.svg#icon-Vector"></use>
                     </svg>
                 </div>
-                <div>
+                    <div class="modal-name">
                     <label for="coments">Коментар</label>
-                    <textarea name="coments" id="coments" rows="10" placeholder="Введіть текст"></textarea>
+                    </div class="modal-vod">
+                    <div>
+                    <textarea name="coments" class="modal-textarea" id="coments" rows="5" placeholder="Введіть текст"></textarea>
                 </div>
 
                 <div>
                     <input type="checkbox">
+                    <p>Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></p>
                 </div>
                <button  type="submit" class="btn-send">Відправити</button>
               </form>
