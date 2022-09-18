@@ -370,16 +370,22 @@
                     <label for="coments">Коментар</label>
                     <textarea name="coments" class="modal-textarea" id="coments" rows="5" placeholder="Введіть текст"></textarea>
                 </div>
-
-                <div>
-                    <input type="checkbox">
-                    <p>Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></p>
+                <div class="check">
+                    <input type="checkbox" class="modal-check" name="check" id="check" value="true" />
+                    <label for="check" class="modal-check-text">
+                        <span>
+                            <svg class="modal-icon-vector" width="11px" height="8px">
+                                <use href="./img/symbol-defs.svg#icon-vector1"></use>
+                            </svg>
+                        </span>
+                        <p class="text-p">Погоджуюся з розсилкою та приймаю</p>
+                        <a href="" class="text-a">Умови договору</a>
+                    </label>
                 </div>
                <button  type="submit" class="btn-send">Відправити</button>
               </form>
             </div>
         </div>
-    </div>
  <script src="./js/modal.js"></script>
 </body>
 </html>
