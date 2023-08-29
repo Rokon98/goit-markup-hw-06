@@ -33,9 +33,21 @@ ol{
     margin: 0;
 }
 .container{
-    width: 1158px;
-    padding: 0 15px;
+    max-width: 428px;
+    min-width: 320px;
+    padding: 0 16px;
     margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+    .container{
+        max-width: 738px;
+        padding: 0 15px;
+    }
+}
+@media screen and (min-width: 1158px) {
+    .container{
+        max-width: 1128px;
+    }
 }
 .header-container{
     width: 1158px;
@@ -161,8 +173,8 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /*MAIN*/
 /*HERO*/
 .hero{
-    max-width: 1440px;
-    height: 600px;
+    max-width: 428px;
+    height: 432px;
     margin: 0 auto;
     background-color: var(--navyblue-color);
 background-image: linear-gradient(
@@ -170,21 +182,49 @@ background-image: linear-gradient(
     rgba(46, 47, 66, 0.70)
 ),
  url(../images/people-office.jpg);
-padding: 188px 0;
+padding: 112px 0;
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 }
+@media screen and (min-width: 768px) {
+    .hero{
+        max-width: 768px;
+        height: 436px;
+        padding: 112px 0;
+    }
+}
+@media screen and (min-width: 1158px) {
+    .hero{
+        max-width: 1440px;
+        height: 600px;
+        padding: 188px 0;
+    }
+}
+
 .hero-title{
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 48px;
-    max-width: 496px;
+    margin-bottom: 72px;
+    max-width: 320px;
     color: var(--white-background);
-    font-size: 56px;
+    font-size: 36px;
 font-weight: 700;
-line-height: 1.07;
+line-height: 1.11;
 letter-spacing: 0.02em;
+}
+@media screen and (min-width: 768px) {
+    .hero-title{
+      margin-bottom: 36px;
+      max-width: 496px;
+      font-size: 56px;
+      line-height: 1.07;
+    }
+}
+@media screen and (min-width: 1158px) {
+    .hero-title{
+        margin-bottom: 48px;
+    }
 }
 .hero-btn{
     display: block;
@@ -206,6 +246,7 @@ padding: 16px 32px;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .hero-btn:hover,
 .hero-btn:focus{
  background-color: var(--ocean-color);
@@ -215,19 +256,52 @@ transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 /*ASIDE*/
 .aside {
     background-color: var(--white-background);
-    padding: 120px 0;
+    padding: 96px 0;
+}
+@media screen and (min-width: 1158px) {
+    .aside{
+        padding: 120px 0;
+    }
 }
 .aside-title {
 }
 .aside-list {
+    display: block;
+}
+@media only screen and (max-width: 768px) {
+   .aside-list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+   .aside-list{
     display: flex;
     gap: 24px;
+  }
 }
 .aside-item {
-    flex-basis: calc((100% - 24px * 3)/4);
+    /*flex-basis: calc((100% - 24px * 3)/4);*/
+}
+@media only screen and (max-width: 767.98px) {
+   .aside-item:not(:last-child){
+    margin-bottom: 72px;
+  }
+}
+@media only screen and (min-width: 768px) {
+   .aside-item{
+    flex-basis: calc((100% - 24px)/2);
+  }
+}
+@media only screen and (min-width: 1158px) {
+    .aside-item{
+        flex-basis: calc((100% - 24px * 3)/4);
+  }
 }
 .aside-list-icon{
-    display: flex;
+    display: none;
     width: 264px;
     height: 112px;
     align-items: center;
@@ -236,13 +310,24 @@ transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--cloud-background);
     border-radius: 4px;
 }
+@media only screen and (min-width: 1158px) {
+   .aside-list-icon{
+    display: flex;
+  }
+}
 .aside-subject {
     color: var(--navyblue-color);
-    font-size: 20px;
+    font-size: 36px;
 font-weight: 500;
-line-height: 1.2;
+line-height: 1.11;
 letter-spacing: 0.02em;
 margin-bottom: 8px;
+}
+@media only screen and (min-width: 1158px) {
+   .aside-subject{
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 .aside-text {
     color: var(--slate-color);
@@ -275,7 +360,12 @@ text-align: center;
 /*TEAM */
 .team {
     background-color: var(--cloud-background);
+    padding: 96px 0;
+}
+@media only screen and (min-width: 1158px) {
+   .team{
     padding: 120px 0;
+  }
 }
 .team-title {
     margin-bottom: 72px;
@@ -288,16 +378,44 @@ text-transform: capitalize;
 text-align: center;
 }
 .team-list{
-    display: flex;
-    gap: 24px;
+    display: block;
+    /*gap: 24px;*/
 
 }
+@media only screen and (min-width: 768px) {
+   .team-list{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+   .team-list{
+    gap: 24px;
+  }
+}
 .team-item {
-    flex-basis: calc((100% - 24px * 3)/4);
-    background-color: var(--white-background);
+     flex-basis: calc((100% - 24px * 3)/4);
+     background-color: var(--white-background);
      border-radius: 0px 0px 4px 4px;
-    background: var(--white-background);
-box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+     background: var(--white-background);
+     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+@media only screen and (max-width: 767.98px) {
+   .team-item:not(:last-child){
+    margin-bottom: 72px;
+  }
+}
+@media only screen and (min-width: 768px) {
+   .team-item{
+    flex-basis: calc((100% - 24px)/2);
+  }
+}
+@media only screen and (min-width: 1158px) {
+   .team-item{
+    flex-basis: calc((100% - 24px * 3)/4);
+  }
 }
 .team-st{
     padding: 32px 0;
@@ -352,7 +470,12 @@ margin-bottom: 8px;
 }
 /*CLIENT*/
 .client {
+    padding: 96px 0;
+}
+@media only screen and (min-width: 1158px) {
+   .client{
     padding: 120px 0;
+  }
 }
 .client-title {
     margin-bottom: 72px;
@@ -368,12 +491,36 @@ color: var(--navyblue-color);
 }
 .client-list {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 16px;
+}
+@media only screen and (min-width: 768px) {
+   .client-list{
+    column-gap: 24px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+   .client-list{
     gap: 24px;
+  }
 }
 .client-item {
-    flex-basis: calc((100% - 24px * 5) / 6);
-    width: 168px;
+    flex-basis: calc((100% - 24px) / 2);
+    width: 190px;
     height: 88px;  
+}
+@media only screen and (min-width: 768px) {
+   .client-item{
+    flex-basis: calc((100% - 24px * 2)/ 3);
+    width: 168px;
+    height: 88px; 
+  }
+}
+@media only screen and (min-width: 1158px) {
+   .client-item{
+    flex-basis: calc((100% - 24px * 5) / 6);
+  }
 }
 .client-link{
     display: flex;
