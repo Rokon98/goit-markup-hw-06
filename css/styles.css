@@ -216,25 +216,62 @@ background-image: linear-gradient(
     rgba(46, 47, 66, 0.70),
     rgba(46, 47, 66, 0.70)
 ),
- url(../images/people-office.jpg);
+ url(../images/fon/Dark-bgmob@1x.jpg);
 padding: 112px 0;
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+   .hero{
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.70),
+    rgba(46, 47, 66, 0.70)
+),
+ url(../images/fon/Dark-bgmob@2x.jpg);
+  }
 }
 @media screen and (min-width: 768px) {
     .hero{
         max-width: 768px;
         height: 436px;
         padding: 112px 0;
+        background-image: linear-gradient(
+    rgba(46, 47, 66, 0.70),
+    rgba(46, 47, 66, 0.70)
+),
+ url(../images/fon/Dark-bgtab@1x.jpg);
     }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+   .hero{
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.70),
+    rgba(46, 47, 66, 0.70)
+),
+ url(../images/fon/Dark-bgtab@2x.jpg);
+  }
 }
 @media screen and (min-width: 1158px) {
     .hero{
         max-width: 1440px;
         height: 600px;
         padding: 188px 0;
+        background-image: linear-gradient(
+    rgba(46, 47, 66, 0.70),
+    rgba(46, 47, 66, 0.70)
+),
+ url(../images/fon/people-office\ 1des@1x.jpg);
     }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+   .hero{
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.70),
+    rgba(46, 47, 66, 0.70)
+),
+ url(../images/fon/people-office\ 1des@2x.jpg);
+  }
 }
 
 .hero-title{
@@ -358,6 +395,11 @@ line-height: 1.11;
 letter-spacing: 0.02em;
 margin-bottom: 8px;
 }
+@media only screen and (max-width: 767.98px) {
+   .aside-subject{
+    text-align: center;
+  }
+}
 @media only screen and (min-width: 1158px) {
    .aside-subject{
     font-size: 20px;
@@ -374,6 +416,11 @@ letter-spacing: 0.02em;
 .work {
     background-color: var(--white-background);
     padding-bottom: 120px;
+}
+@media only screen and (max-width: 1157.98px) {
+   .work{
+    display: none;
+  }
 }
 .work-title {
     margin-bottom: 72px;
@@ -451,6 +498,9 @@ text-align: center;
    .team-item{
     flex-basis: calc((100% - 24px * 3)/4);
   }
+}
+.team-img{
+    margin: 0 auto;
 }
 .team-st{
     padding: 32px 0;
